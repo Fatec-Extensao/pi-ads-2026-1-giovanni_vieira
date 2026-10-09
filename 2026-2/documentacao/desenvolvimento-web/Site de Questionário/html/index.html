@@ -4,33 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Questionários Institucionais - Início</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">  
   </head>
   <body>
+    </header>
     <!-- banner de cabeçalho do Site -->
-    <header>
-      <!-- pode substituir o img abaixo para inserir o banner -->
+    <header class="banner">
       <img
-        img src="../img/fatec.jpg"
+        img src="../img/fatec-lins.png"
         alt="Banner do Sistema de Questionários Institucionais"
         width="400"
         height="250"
+        class="banner-fatec"
       />
-      <h1>Sistema de Pesquisas e Questionários Institucionais</h1>
-    </header>
-    <!-- menu de navegação -->
-    <nav>
+    </header>      
+    <h1>Sistema de Pesquisas e Questionários Institucionais</h1>
+   <!-- Menu de navegação -->
+    <nav class="letterbox">
       <h2>Menu de Navegação</h2>
-      <ul>
-        <li><a href="login.html">Fazer Login</a></li>
-        <li><a href="main.html">Área do Usuário</a></li>
-        <li><a href="cadpesq.html">Cadastro de Pesquisas para Gestores</a></li>
-        <!-- futuramente o cadpesq será acessado através somente do login de gestores educacionais -->
+      <ul class="container-botoes">
+        <a href="login.html" class="botao">Fazer Login</a>
+        <a href="main.html" class="botao">Área do Usuário</a>
+        <a href="cadpesq.html" class="botao">Cadastro de Pesquisas para Gestores</a>
       </ul>
-      <hr />
     </nav>
+
     <main>
-      <!-- apresentação da pesquisa -->
-      <section>
+      <!-- Apresentação da pesquisa -->
+      <section class="letterbox">
         <h2>Apresentação da Pesquisa</h2>
         <p>
           Bem-vindo ao portal de avaliação institucional de questionários. Este projeto tem como
@@ -45,48 +51,32 @@
           para fins de melhoria contínua e análise acadêmica/administrativa.
         </p>
       </section>
-      <!-- Informações adicionais -->
-      <section>
+
+      <!-- Informações adicionais e Dúvidas Frequentes -->
+      <section class="letterbox">
         <h2>Como Funciona?</h2>
-        <p>
-          Para participar e preencher os questionários, siga os passos abaixo:
-        </p>
+        <p>Para participar e preencher os questionários, siga os passos abaixo:</p>
         <ol>
           <li>Acesse o <strong>Menu de Navegação</strong> acima.</li>
-          <li>
-            Clique em <strong>Fazer Login</strong> para autenticar-se no sistema
-            usando suas credenciais institucionais.
-          </li>
-          <li>
-            Após o login, você será redirecionado para a tela principal <strong>(
-              Área do Usuário )</strong onde poderá ver a lista de formulários disponíveis para o seu
-            perfil.
-          </li>
+          <li>Clique em <strong>Fazer Login</strong> para autenticar-se no sistema usando suas credenciais institucionais.</li>
+          <li>Após o login, você será redirecionado para a tela principal <strong>(Área do Usuário)</strong> onde poderá ver a lista de formulários disponíveis para o seu perfil.</li>
           <li>Selecione a pesquisa desejada e responda com sinceridade.</li>
         </ol>
+
+        <hr />
+
         <h3>Dúvidas Frequentes</h3>
-        <p>
-          <strong>Quem pode participar?</strong> Alunos e professores
-          devidamente matriculados.
-        </p>
-        <p>
-          <strong>Quanto tempo leva?</strong> Cada questionário leva em média de
-          5 a 15 minutos para ser concluído.
-        </p>
+        <p><strong>Quem pode participar?</strong> Alunos e professores devidamente matriculados.</p>
+        <p><strong>Quanto tempo leva?</strong> Cada questionário leva em média de 5 a 15 minutos para ser concluído.</p>
       </section>
     </main>
-    <br/>
-    <hr/>
+
     <!-- Rodapé -->
-    <footer>
-      <p>     <p>&copy; 2026 - [Nome da Sua Instituição ou Projeto].</p>
+    <footer class="letterbox rodape">
+      <p>&copy; 2026 - [Nome da Sua Instituição ou Projeto].</p>
       <p>Projeto Integrador - Disciplina de Desenvolvimento Web.</p>
-      <p>
-        Contato para suporte:
-        <a href="mailto:suporte@instituicao.edu.br"
-          >suporte@instituicao.edu.br</a
-        >
-      </p>
+      <p>Contato para suporte: <a href="mailto:suporte@instituicao.edu.br">suporte@instituicao.edu.br</a></p>
     </footer>
+
   </body>
 </html>
