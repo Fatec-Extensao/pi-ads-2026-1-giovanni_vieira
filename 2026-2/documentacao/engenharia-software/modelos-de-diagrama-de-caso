@@ -3,7 +3,7 @@
 A seguir serão listados todos os UMLs trabalhados no primeiro semestre de Analise e Desenvolvimento de sistemas, presentes no arquivo de Engenharia de Software do sistema de pesquisas:
 
 Manter pesquisas
-![alt text](image-2.png)
+![diagrama de caso de criação, edição e remoção de pesquisas](image-2.png)
 
 FP1:
 
@@ -56,7 +56,7 @@ FA2. Cancelar Editar
 ---
 
 Gerar senhas para o anonimato
-![alt text](image-3.png)
+![diagrama de caso de gerar senhas para respondentes](image-3.png)
 
 FP1:
 
@@ -86,7 +86,7 @@ FP1:
 ---
 
 Responder Questionários
-![alt text](image-4.png)
+![diagrama de caso de resposta de questionário](image-4.png)
 
 FP1: Acesso à pesquisa (Alunos/Gestores educacionais/Professores)
 
@@ -127,7 +127,7 @@ FP1: Acesso à pesquisa (Alunos/Gestores educacionais/Professores)
 ---
 
 Criar Dashboard:
-![alt text](image-5.png)
+![diagrama de caso de criação de dashboards](image-5.png)
 
 FP1: Dashboard
 
