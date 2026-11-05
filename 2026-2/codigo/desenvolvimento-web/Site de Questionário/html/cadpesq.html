@@ -33,7 +33,7 @@
         <!-- Formulário Completo de Cadastro -->
         <form action="#" method="POST">
           <!-- Primeiro Agrupamento: Informações Gerais -->
-          <fieldset>
+          <fieldset class="fieldset-suave">
             <legend>Informações Gerais da Pesquisa</legend>
             <p>
               <label for="titulo"><strong>Título da Pesquisa:</strong></label
@@ -66,7 +66,7 @@
           </fieldset>
           <br />
           <!-- segundo agrupamento: prazos e Público -->
-          <fieldset>
+          <fieldset class="fieldset-suave">
             <legend>Configurações de Prazo e Público</legend>
             <p>
               <!-- inputs de data com validação nativa -->
@@ -78,7 +78,6 @@
                 required
                 aria-required="true"
               />
-              &nbsp;&nbsp;
               <!-- Espaço em branco -->
               <label for="data-fim"
                 ><strong>Data de Encerramento:</strong></label
@@ -115,7 +114,7 @@
           <br />
 
           <!-- terceiro agrupamento: status da publicação -->
-          <fieldset>
+          <fieldset class="fieldset-suave">
             <legend>Status da Publicação</legend>
             <p>
               <!-- radio buttons para escolha única -->

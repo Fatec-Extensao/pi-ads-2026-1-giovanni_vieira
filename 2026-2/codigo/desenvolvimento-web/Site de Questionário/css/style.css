@@ -1,9 +1,11 @@
 
 
 body {
-    background-color:rgb(225, 225, 230)
-    font-family: Inter, sans-serif;
-    color: #3333333
+    background-color:rgb(225, 225, 230);
+    font-family: Inter, arial, system-ui;
+    color: #3333333;
+    min-height: 100vh;
+    line-height: 1.6;
 }
 
 
@@ -59,14 +61,13 @@ body::before {
 }
 
 h1 {
-    color:rgb(52, 55, 219)
+    color:rgb(52, 55, 219);
     font-family: Arial, sans-serif;
     font-size: 38px;
     text-align: center;
 
 
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 10px solid rgba(232, 231, 241, 0.5);
+    background-color: rgba(255, 255, 255, 0.608);
     padding: 40px;
 }
 
@@ -291,6 +292,43 @@ legend {
   font-size: 0.95rem; /* Torna a letra um pouco mais pequena para parecer um subtítulo */
   color: #333333; /* Cor do texto */
   padding: 0 10px; /* Garante que o texto não cola nas bermas em ecrãs mais pequenos */
+}
+
+
+.fieldset-suave {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    
+    /* Mantemos o espaçamento lateral e inferior para os campos não colarem nas bordas */
+    padding: 0 25px 25px 25px; 
+    margin-bottom: 30px;
+}
+
+.fieldset-suave legend {
+    background-color: rgba(76, 139, 245, 0.85);
+    color: #fff;
+    padding: 15px 25px; 
+    font-size: 0.95rem;
+    font-weight: 600;
+    
+    /* O TRUQUE MÁGICO PARA A LEGENDA: */
+    /* 1. Forçamos a largura para ser 100% + os 50px de padding (25px de cada lado) do fieldset */
+    width: calc(100% + 50px); 
+    
+    /* 2. Puxamos a barra 25px para a esquerda, anulando o espaço vazio */
+    margin-left: -25px; 
+    
+    /* 3. Puxamos a barra 1 pixel para cima para sobrepor a linha do topo */
+    margin-top: -1px; 
+    
+    /* Espaço abaixo da barra para separar dos inputs */
+    margin-bottom: 25px; 
+    
+    /* Arredondamento apenas no topo acompanhando a caixa de fora */
+    border-radius: 8px 8px 0 0; 
+    box-sizing: border-box;
+    display: block; /* Obriga o navegador a tratar a legenda como um bloco sólido */
 }
 
 /* Ajuste específico para o rodapé ficar centralizado e com texto menor */
